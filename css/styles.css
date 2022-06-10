@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+body{
+    background: #FF5F6D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+section{
+    max-width: 900px;
+    background-color: aliceblue;
+    border: 2px solid royalblue;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+    margin: 0 auto;
+    justify-content:space-around;
+    align-items: center;    
+    height: 300px;
+}
+
+.title{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button{
+    margin-top: 20px;       
+}
+
+input{
+    color: black;
+}
+
+button.btn {
+    background-color: coral;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+input#arabigo {
+    padding: 3px;
+    border-radius: 5px;
+}
+
+input#arabig {
+    padding: 3px;
+    border-radius: 5px;
+}
+
+p.result {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+h3.valueEnd{
+    margin-top: 20px;
+    font-size: 24px; 
+}
+
+
+@media (max-width: 800px) {
+    .header{       
+        font-size: 20px;        
+    }
+}
+
+@media (max-width: 700px) {
+    section{
+        max-width: 500px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 350px;      
+    }
+    .container-left{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 550px) {
+    .header{       
+        font-size: 18px;        
+    }
+    section{
+        max-width: 450px;
+        padding: 15px;
+    }    
+}
+
